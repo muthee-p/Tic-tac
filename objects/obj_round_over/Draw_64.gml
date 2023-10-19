@@ -8,6 +8,7 @@ height = window_get_height() /2;
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_alpha(1);
+draw_clear_alpha(c_black, 1);
 draw_set_font(fnt_custom);
 
 

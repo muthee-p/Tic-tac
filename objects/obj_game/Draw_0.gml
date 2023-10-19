@@ -1,5 +1,5 @@
-for (var i = 0; i<ds_grid_width(grid);i++;){
-	for (var j= 0; j<ds_grid_height(grid); j++;){
+for (var i = 0; i< ds_grid_width(grid);i++;){
+	for (var j= 0; j< ds_grid_height(grid); j++;){
 		if(grid[# i, j] == -1) {
 			continue;
 		}
@@ -9,6 +9,7 @@ for (var i = 0; i<ds_grid_width(grid);i++;){
 }
 
 var ww, turn;
+var textArea= 200;
 ww= window_get_width();
 
 switch (player){
@@ -16,6 +17,11 @@ switch (player){
 	case	false:turn ="circle";	break;
 }
 
+draw_set_halign(fa_center);
+draw_set_color(c_black);
+draw_set_alpha(1);
+
+draw_rectangle(0, 0, ww, 30, false);
 
 
 draw_set_halign(fa_left);
@@ -35,3 +41,4 @@ draw_text(ww - 2, 14, "circle");
 
 draw_set_halign(fa_center);
 draw_text(ww/2, 2, "turn: " + turn)
+
