@@ -17,9 +17,10 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"scr_check_win","order":1,"path":"scripts/scr_check_win/scr_check_win.yy",},
     {"name":"spr_o","order":4,"path":"sprites/spr_o/spr_o.yy",},
+    {"name":"obj_round_over","order":2,"path":"objects/obj_round_over/obj_round_over.yy",},
     {"name":"spr_game","order":1,"path":"sprites/spr_game/spr_game.yy",},
     {"name":"obj_bg","order":1,"path":"objects/obj_bg/obj_bg.yy",},
-    {"name":"image1","order":3,"path":"sprites/image1/image1.yy",},
   ],
 }

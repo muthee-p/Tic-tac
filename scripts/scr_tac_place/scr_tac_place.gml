@@ -3,9 +3,13 @@
 
 function scr_tac_place(){
 	var xx =argument[0];
-var yy= argument[1];
+	var yy= argument[1];
 
 grid[# xx,yy] = player;
-player= !player;
+
+if(!game_over) {  player= !player;}
+
+//check for win
+scr_check_win();
 
 }
