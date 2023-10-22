@@ -1,6 +1,8 @@
 /// scr_computer_move
 function scr_computer_move(){
-	
+	if(computer_delay > 0){
+		alarm[0] = computer_delay;
+	}else{
 var empty_cells = ds_list_create();
 
 for (var i = 0; i < ds_grid_width(grid); i++) {
@@ -78,4 +80,5 @@ for (var i = 0; i < ds_grid_width(grid); i++) {
 	}
 	
 ds_list_destroy(empty_cells);
+	}
 }

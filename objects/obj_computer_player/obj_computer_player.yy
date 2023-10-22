@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "spr_single_player",
+    "path": "sprites/spr_single_player/spr_single_player.yy",
   },
   "spriteMaskId": {
     "name": "spr_game",

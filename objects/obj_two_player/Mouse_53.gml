@@ -1,4 +1,4 @@
-game_mode = "two_players";
+var game_mode = "two_players";
 room_goto(rm_game);
 
 

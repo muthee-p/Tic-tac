@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_two_player",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":53,"eventType":6,"isDnD":false,},
-  ],
+  "name": "obj_turn",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -28,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_two_player",
-    "path": "sprites/spr_two_player/spr_two_player.yy",
+    "name": "spr_turn",
+    "path": "sprites/spr_turn/spr_turn.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -7,6 +7,7 @@ ds_grid_clear(grid, -1);
 	player = false;
 
 	game_over = false;
+	computer_delay = 60;
 
 if(game_mode == "two_players"){
 	
@@ -18,6 +19,7 @@ if(game_mode == "two_players"){
 
 	game_over = false;
 } else if (game_mode == "aganist_computer"){
+	
 	grid = ds_grid_create(3,3);
 	ds_grid_clear(grid, -1);
 	cell_width = 260;
