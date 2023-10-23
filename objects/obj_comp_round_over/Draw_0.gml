@@ -1,7 +1,7 @@
 if(!game_over){
 
 var player, width, height, turn;
-player = obj_game.player;
+player = obj_comp_game.player;
 width = 1280/2;
 height = 1600/2;
 

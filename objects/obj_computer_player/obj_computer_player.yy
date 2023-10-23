@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "obj_computer_player",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":53,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,9 +31,6 @@
     "name": "spr_single_player",
     "path": "sprites/spr_single_player/spr_single_player.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_game",
-    "path": "sprites/spr_game/spr_game.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

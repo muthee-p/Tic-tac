@@ -4,13 +4,9 @@ yy = (mouse_y -  616) div cell_width;
 
 if(game_over == false)
 {
-	if(grid[# xx, yy] == -1){
-		audio_play_sound(snd_click, 1, false);
-		scr_tac_place(xx,yy);
-	}
 	
-	//if(player == false){
-	//	audio_play_sound(snd_click, 1, false);
-	//	scr_computer_move();
-	//}
+	if(player == false){
+		audio_play_sound(snd_click, 1, false);
+		scr_computer_move();
+	}
 }

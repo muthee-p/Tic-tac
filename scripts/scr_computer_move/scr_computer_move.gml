@@ -1,8 +1,49 @@
-/// scr_computer_move
+
 function scr_computer_move(){
-	if(computer_delay > 0){
-		alarm[0] = computer_delay;
-	}else{
+	
+
+///// scr_computer_move
+
+//// Define the computer's preferred moves
+//var preferred_moves = [
+//    [1, 1], // Center (highest priority)
+//    [0, 0], [0, 2], [2, 0], [2, 2], // Corners
+//    [0, 1], [1, 0], [1, 2], [2, 1] // Sides
+//];
+
+//// Check for winning moves
+//for (var i=0;i< array_length(preferred_moves);i++) {
+//	var move= preferred_moves[i];
+//    if (grid[# move[0], move[1]] == -1) {
+//        grid[# move[0], move[1]] = 0; // Try to make a winning move
+//        if (scr_check_win() == "win") {
+//            scr_tac_place(move[0], move[1]);
+//            return; // Winning move found
+//        }
+//        grid[# move[0], move[1]] = -1; // Undo the move
+//    }
+//}
+
+//// Check for blocking moves
+//for (var i=0;i< array_length(preferred_moves);i++) {
+//	var move= preferred_moves[i];
+//    if (grid[# move[0], move[1]] == -1) {
+//        grid[# move[0], move[1]] = 1; // Try to block the player's winning move
+//        if (scr_check_win() == "win") {
+//            scr_tac_place(move[0], move[1]);
+//            return; // Blocking move found
+//        }
+//        grid[# move[0], move[1]] = -1; // Undo the move
+//    }
+//}
+
+//// If no winning or blocking moves, make a random move
+//var random_move = preferred_moves[ irandom(array_length(preferred_moves) - 1)];
+
+//scr_tac_place(random_move[0], random_move[1]);
+
+
+
 var empty_cells = ds_list_create();
 
 for (var i = 0; i < ds_grid_width(grid); i++) {
@@ -15,70 +56,14 @@ for (var i = 0; i < ds_grid_width(grid); i++) {
         }
     }
 }
-
-/// scr_computer_move
-//var xx, yy;
-
-///// scr_computer_move
-//var xx, yy;
-
-//// Rule 1: If the computer can win in the next move, do it.
-//for (var i = 0; i < ds_grid_width(grid); i++) {
-//    for (var j = 0; j < ds_grid_height(grid); j++) {
-//        if (grid[# i, j] == -1) {
-//            // Simulate the move
-//            grid[# i, j] = 0; // Computer's move
-//            if (scr_check_win() == "win") {
-//                xx = i;
-//                yy = j;
-//                grid[# i, j] = -1; // Undo the move
-//                scr_tac_place(xx, yy);
-//                return;
-//            }
-//            grid[# i, j] = -1; // Undo the move
-//        }
-//    }
-//}
-
-//// Rule 2: If the player can win in the next move, block them.
-//for (var i = 0; i < ds_grid_width(grid); i++) {
-//    for (var j = 0; j < ds_grid_height(grid); j++) {
-//        if (grid[# i, j] == -1) {
-//            // Simulate the move
-//            grid[# i, j] = 1; // Player's move
-//            if (scr_check_win() == "win") {
-//                xx = i;
-//                yy = j;
-//                grid[# i, j] = -1; // Undo the move
-//                scr_tac_place(xx, yy);
-//                return;
-//            }
-//            grid[# i, j] = -1; // Undo the move
-//        }
-//    }
-//}
-
-//// Rule 3: If the center is empty, take it.
-//if (grid[# 1, 1] == -1) {
-//    xx = 1;
-//    yy = 1;
-//} else {
-//    // Rule 4: Choose a random available move.
-//    do {
-//        xx = irandom(2);
-//        yy = irandom(2);
-//    } until (grid[# xx, yy] != -1);
-//}
-
-//scr_tac_place(xx, yy);
-
  
 	if(!ds_list_empty(empty_cells)){
 		var randomIndex = irandom(ds_list_size(empty_cells) -1);
 		var cell =empty_cells[| randomIndex];
 		 scr_tac_place(cell[| 0], cell[| 1]);
+		 
 	}
 	
 ds_list_destroy(empty_cells);
-	}
+	
 }
