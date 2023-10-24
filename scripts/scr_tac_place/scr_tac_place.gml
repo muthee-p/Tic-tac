@@ -5,10 +5,11 @@ function scr_tac_place(){
 	
 	
     grid[# xx, yy] = player;
-   
-
-    if (!game_over) {player = !player;}
+    if (!game_over) {player = !player; }
 
  scr_check_win();
-
+ if(scr_check_win == !game_over){
+	 
+game_over= true;
+ }
 }

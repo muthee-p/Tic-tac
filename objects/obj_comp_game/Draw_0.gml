@@ -35,10 +35,12 @@ draw_set_font(fnt_helv);
 
 draw_text(64, 45, "Player one");
 draw_text(64, 75, "Cross");
+draw_text(64, 109, "Score: " + string(player1));
 
 draw_set_halign(fa_right);
-draw_text(ww - 64, 45,"Player two");
+draw_text(ww - 64, 45,"Computer");
 draw_text(ww - 64, 75, "Circle");
+draw_text(ww, 109, "Score: " + string(player2));
 
 
 draw_set_halign(fa_center);

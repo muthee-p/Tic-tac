@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "find_winning_move",
+  "name": "scr_comp_tac_place",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

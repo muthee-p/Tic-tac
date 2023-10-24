@@ -1,9 +1,14 @@
-if(!game_over){
-
+ 
 var player, width, height, turn;
-player = obj_game.player;
+
 width = 1280/2;
 height = 1600/2;
+
+if (instance_exists(obj_game)) {
+    player = obj_game.player;
+} else if (instance_exists(obj_comp_game)) {
+    player = obj_comp_game.player;
+}
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -22,8 +27,5 @@ switch(tie) {
 		
 		draw_text(width, height, turn + " wins");
 		break;
-
-}
-
 
 }

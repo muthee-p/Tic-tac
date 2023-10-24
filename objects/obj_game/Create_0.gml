@@ -7,3 +7,6 @@
 	player = false;
 
 	game_over = false;
+	
+player1= 0;
+player2 = 0;
