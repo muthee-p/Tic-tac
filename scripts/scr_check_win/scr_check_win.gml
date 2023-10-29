@@ -86,17 +86,19 @@ function scr_check_win(){
 	
 	//var winner = 0;
 	
-	
+	 
 	if(checkRowWin(cross) || checkColWin(cross) || checkDiagonalWin(cross)){
 		player1 += 1;
-		instance_create_depth(0, 0, 0, obj_round_over);
 		game_over = true;
+		instance_create_depth(0, 0, 0, obj_round_over);
+		
 		return;
 	}
 	else if(checkRowCirWin(circle) || checkColCirWin(circle) || checkDiagonalCirWin(circle)){
 		player2 += 1;
-		instance_create_depth(0, 0, 0, obj_round_over);
 		game_over = true;
+		instance_create_depth(0, 0, 0, obj_round_over);
+		
 		return;
 	}
 	else if(!ds_grid_value_exists(grid, 0, 0, 2, 2, -1)){

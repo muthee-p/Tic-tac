@@ -12,11 +12,20 @@ var ww, turn;
 var textArea= 200;
 ww= 1280;
 
+
 switch (player){
 	case	 true:turn ="Cross";	break;
 	case	false:turn ="Circle";	break;
 }
 
+//if (player == false) {
+//  // Make a computer move
+//  turn = "Computer";
+//} else if (player == true) {
+//turn = "Player";
+//}
+
+		
 draw_set_halign(fa_center);
 draw_set_color(c_black);
 draw_set_alpha(1);
@@ -33,18 +42,22 @@ draw_set_font(-1);
 draw_set_font(fnt_helv);
 
 
-draw_text(64, 45, "Player one");
-draw_text(64, 75, "Cross");
-draw_text(64, 109, "Score: " + string(player1));
+draw_text(64, 45, "Player");
+draw_text(64, 79, "Cross");
+draw_text(64, 113, "Score: " + string(player1));
 
 draw_set_halign(fa_right);
 draw_text(ww - 64, 45,"Computer");
-draw_text(ww - 64, 75, "Circle");
-draw_text(ww, 109, "Score: " + string(player2));
+draw_text(ww - 84, 79, "Circle");
+draw_text(ww - 74, 113, "Score: " + string(player2));
 
 
 draw_set_halign(fa_center);
 draw_text(ww/2, 45, "Turn: " + turn)
+
+//draw_set_halign(fa_right);
+//draw_text(ww - 64, 240, "EASY");
+
 
 var x_fixed = 166;
 var y_fixed = 972;
@@ -61,8 +74,8 @@ for (var i = 0; i < ds_grid_width(grid); i++) {
     for (var j = 0; j < ds_grid_height(grid); j++) {
         if (grid[# i, j] != -1) {
             // Determine which symbol to draw based on the current player
-            var symbol_subimage = player ? 1 : 0;
-			var second_symbol_subimage = player ? 0 : 1;
+            var symbol_subimage = player ? 0 : 1;
+			var second_symbol_subimage = player ? 1 : 0;
 
             // Draw the symbol for the current player at the fixed position
             draw_sprite(spr_turn, symbol_subimage, x_fixed - symbol_x, y_fixed - symbol_y);

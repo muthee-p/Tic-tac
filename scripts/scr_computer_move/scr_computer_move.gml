@@ -1,4 +1,5 @@
 function scr_computer_move() {
+	
 
     // Check if it is the computer's turn
     if (player == false) {
@@ -19,13 +20,16 @@ function scr_computer_move() {
 
         // If there are any empty cells, make a random move
         if (!ds_list_empty(empty_cells)) {
+			
             var randomIndex = irandom(ds_list_size(empty_cells) - 1);
-            var cell = empty_cells[| randomIndex];
-			scheduler_resolution_set(computer_move_delay);
+           var cell = empty_cells[| randomIndex];
+			
             scr_comp_tac_place(cell[| 0], cell[| 1]);
         }
 
         // Destroy the empty cells list
         ds_list_destroy(empty_cells);
+		
+		
     }
 }

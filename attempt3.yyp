@@ -27,6 +27,7 @@
   "resources": [
     {"id":{"name":"spr_home_icon","path":"sprites/spr_home_icon/spr_home_icon.yy",},},
     {"id":{"name":"obj_comp_game","path":"objects/obj_comp_game/obj_comp_game.yy",},},
+    {"id":{"name":"Script5","path":"scripts/Script5/Script5.yy",},},
     {"id":{"name":"fnt_custom","path":"fonts/fnt_custom/fnt_custom.yy",},},
     {"id":{"name":"scr_check_win","path":"scripts/scr_check_win/scr_check_win.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},

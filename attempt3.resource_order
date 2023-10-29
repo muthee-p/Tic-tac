@@ -10,6 +10,7 @@
   "ResourceOrderSettings": [
     {"name":"spr_home_icon","order":9,"path":"sprites/spr_home_icon/spr_home_icon.yy",},
     {"name":"obj_comp_game","order":8,"path":"objects/obj_comp_game/obj_comp_game.yy",},
+    {"name":"Script5","order":7,"path":"scripts/Script5/Script5.yy",},
     {"name":"scr_check_win","order":1,"path":"scripts/scr_check_win/scr_check_win.yy",},
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"spr_o","order":1,"path":"sprites/spr_o/spr_o.yy",},
