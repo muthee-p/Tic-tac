@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_turn",
-  "eventList": [],
+  "name": "obj_home_icon",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_turn",
-    "path": "sprites/spr_turn/spr_turn.yy",
+    "name": "spr_home_icon",
+    "path": "sprites/spr_home_icon/spr_home_icon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

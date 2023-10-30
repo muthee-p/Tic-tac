@@ -3,8 +3,6 @@ function scr_check_win(){
 	var cross = 0;
 	var circle = 1;
 	
-
-	
 	//row
 	function checkRowWin(cross){
 		for (var i =0; i< ds_grid_width(grid); i++;){
@@ -86,21 +84,38 @@ function scr_check_win(){
 		return false;
 	}
 	
+	//var winner = 0;
 	
-	
-	
+	 
 	if(checkRowWin(cross) || checkColWin(cross) || checkDiagonalWin(cross)){
-		instance_create_depth(0, 0, 0, obj_round_over);
-		game_over = true;
+		//time_source = time_source_create(time_source_game, 1, time_source_units_seconds,function(){
+
+			//player1 += 1;
+			game_over = true;
+			instance_create_depth(0, 0, 0, obj_round_over);
+			return;
+		//}, []);
+		//time_source_start(time_source);
 	}
-	else if(checkColCirWin(circle) || checkColCirWin(circle) || checkDiagonalCirWin(circle)){
-		instance_create_depth(0, 0, 0, obj_round_over);
-		game_over = true;
+	else if(checkRowCirWin(circle) || checkColCirWin(circle) || checkDiagonalCirWin(circle)){
+		//time_source = time_source_create(time_source_game, 1, time_source_units_seconds,function(){
+			player2 =+ 1;
+			game_over = true;
+			
+			instance_create_depth(0, 0, 0, obj_round_over);
+			return;
+			
+		//}, []);
+		//time_source_start(time_source);
+		
 	}
 	else if(!ds_grid_value_exists(grid, 0, 0, 2, 2, -1)){
 		var tie =instance_create_depth(0, 0, 0, obj_round_over);
 		tie.tie =true;
 	}
+	
+	
+	
 		
 }
 	

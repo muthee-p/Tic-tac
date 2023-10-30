@@ -12,11 +12,16 @@ var ww, turn;
 var textArea= 200;
 ww= 1280;
 
-switch (player){
-	case	 true:turn ="Player 1";	break;
-	case	false:turn ="Player 2";	break;
-}
 
+
+//if (player) {
+//  // Make a computer move
+//  turn = "Computer";
+//} if (!player) {
+//turn = "Player";
+//}
+
+		
 draw_set_halign(fa_center);
 draw_set_color(c_black);
 draw_set_alpha(1);
@@ -32,19 +37,29 @@ draw_set_alpha(1);
 draw_set_font(-1);
 draw_set_font(fnt_helv);
 
+switch (player){
+	case	 true:turn ="Player";	break;
+	case	false:turn ="Computer";	break;
+}
 
-draw_text(64, 45, "Player one");
+
+
+draw_text(64, 45, "Player");
 draw_text(64, 79, "Cross");
-draw_text(64, 109, "Score: " + string(player1));
+draw_text(64, 113, "Score: " + string(player1));
 
 draw_set_halign(fa_right);
-draw_text(ww - 64, 45,"Player two");
-draw_text(ww - 64, 79, "Circle");
-draw_text(ww - 64, 109, "Score: " + string(player2));
+draw_text(ww - 64, 45,"Computer");
+draw_text(ww - 84, 79, "Circle");
+draw_text(ww - 74, 113, "Score: " + string(player2));
 
 
 draw_set_halign(fa_center);
 draw_text(ww/2, 45, "Turn: " + turn)
+
+//draw_set_halign(fa_right);
+//draw_text(ww - 64, 240, "EASY");
+
 
 var x_fixed = 166;
 var y_fixed = 972;

@@ -9,8 +9,8 @@ if(game_over == false)
 		scr_tac_place(xx,yy);
 	}
 	
-	if(player == false){
-		audio_play_sound(snd_click, 1, false);
-		scr_computer_move();
-	}
+	//if(player == false){
+	//	audio_play_sound(snd_click, 1, false);
+	//	scr_computer_move();
+	//}
 }
