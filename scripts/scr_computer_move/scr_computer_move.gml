@@ -31,5 +31,6 @@ function scr_computer_move() {
         ds_list_destroy(empty_cells);	
     }
 		}, [], 5);
-				time_source_start(time_source);
+		
+	time_source_start(time_source);
 }

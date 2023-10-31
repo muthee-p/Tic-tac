@@ -10,3 +10,7 @@
 	
 player1= 0;
 player2 = 0;
+start_cell_x =0
+start_cell_y=0
+highlight= obj_highlight_col;
+

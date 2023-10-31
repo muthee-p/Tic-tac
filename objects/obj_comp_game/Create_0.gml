@@ -10,6 +10,10 @@ computer=false;
 player1 =0;
 player2=0;
 game_over = false;
-//winning_player =-1;
 
 
+
+
+start_cell_x =0;
+start_cell_y=0;
+highlight= obj_highlight_row;

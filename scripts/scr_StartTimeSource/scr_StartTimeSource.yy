@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_wait",
+  "name": "scr_StartTimeSource",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
