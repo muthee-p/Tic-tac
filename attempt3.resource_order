@@ -26,7 +26,6 @@
     {"name":"obj_highlight_col","order":11,"path":"objects/obj_highlight_col/obj_highlight_col.yy",},
     {"name":"obj_highlight_right","order":10,"path":"objects/obj_highlight_right/obj_highlight_right.yy",},
     {"name":"rm_computer","order":2,"path":"rooms/rm_computer/rm_computer.yy",},
-    {"name":"scr_StartTimeSource","order":7,"path":"scripts/scr_StartTimeSource/scr_StartTimeSource.yy",},
     {"name":"obj_home_icon","order":6,"path":"objects/obj_home_icon/obj_home_icon.yy",},
     {"name":"spr_highlight_col","order":13,"path":"sprites/spr_highlight_col/spr_highlight_col.yy",},
     {"name":"spr_single_player","order":7,"path":"sprites/spr_single_player/spr_single_player.yy",},

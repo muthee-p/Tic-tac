@@ -44,7 +44,8 @@ draw_text(ww - 64, 109, "Score: " + string(player2));
 
 
 draw_set_halign(fa_center);
-draw_text(ww/2, 45, "Turn: " + turn)
+draw_text(ww/2, 45, "Turn: " + turn);
+draw_text(ww/2, 109, "Score: " + string(tie_score));
 
 var x_fixed = 166;
 var y_fixed = 972;

@@ -15,11 +15,9 @@ function scr_comp_tac_place(){
         if (!game_over) {
 		
 			player = !player;
-			time_source = time_source_create(time_source_game, 2, time_source_units_seconds,function(){
-            
+            //alarm[1]=0.5;
 				scr_computer_move();
-			}, []);
-		time_source_start(time_source);
+
         }
 		
     }

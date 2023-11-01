@@ -125,7 +125,7 @@ function scr_check_win(){
 	}
 	else if(checkRowCirWin(circle) || checkColCirWin(circle) || checkDiagonalCirWin(circle)){
 		//time_source = time_source_create(time_source_game, 1, time_source_units_seconds,function(){
-			player2 =+ 1;
+			player2 += 1;
 			instance_create_depth(start_cell_x, start_cell_y, 0, highlight);
 			game_over = true;
 			
